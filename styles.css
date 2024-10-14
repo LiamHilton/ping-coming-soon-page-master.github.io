@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+
+--clr-primary-blue: hsl(223, 87%, 63%);
+
+--clr-secondary-pale-blue: hsl(223, 100%, 88%);
+--clr-secondary-light-red: hsl(354, 100%, 66%);
+
+--clr-neutral-gray: hsl(0, 0%, 59%);
+--clr-neutral-dark-blue: hsl(209, 33%, 12%);
+
+--ff-libre: 'Libre Franklin';
+
+--fw-bold: 700;
+--fw-regular: 600;
+--fw-light: 300;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+h1,
+p {
+    color: hsl(210, 19%, 29%);
+}
+
+  
+body{
+ font-family: var(--ff-libre);
+ text-align: center;
+ padding: 50px 0;
+ background: linear-gradient(to right, hsl(223, 87%, 63%), hsl(260, 27%, 96%));
+}
+
+.heading h1{
+    font-weight: var(--fw-light);
+    padding: 50px 0 20px;
+}
+
+.heading h1 span{
+    font-weight: var(--fw-bold);
+    color: var(--clr-neutral-dark-blue);
+}
+
+.heading p{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+.heading .form-container{
+    width: 300px;
+    margin: auto;
+}
+
+.heading .form-container input{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    font-family: var(--ff-libre);
+    font-size: 14px;
+    color: var(--clr-primary-blue);
+    border: 1px solid var(--clr-secondary-pale-blue);
+    border-radius: 30px;
+    outline: none;
+}
+
+.heading .form-container input::placeholder{
+    color: var(--clr-secondary-pale-blue);  
+}
+
+.heading .form-container button{
+    width: 107%;
+    background-color: var(--clr-primary-blue);
+    color: #fff;
+    font-family: var(--ff-libre);
+    font-size: 14px;
+    padding: 8px;
+    border: 2px solid var(--clr-primary-blue);
+    border-radius: 30px;
+    transition: background-color 0.4s;
+}
+
+.heading .form-container button:hover{
+    cursor: pointer;
+    background: linear-gradient(to right,hsl(223, 100%, 88%), hsl(223, 87%, 63%));
+}
+
+.showcase{
+    padding: 50px 20px 80px;
+}
+
+.footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.footer ul li{
+    margin: 0 20px;
+}
+
+.footer ul li a{
+    color: var(--clr-primary-blue);
+    padding: 8px;
+    background-color: var(--clr-secondary-pale-blue);
+    border-radius: 30%;
+    transition: background-color 0.4s;
+
+}
+
+.footer ul li a:hover{
+    background: linear-gradient(to right,hsl(223, 100%, 88%), hsl(223, 87%, 63%));
+    color: #fff
+
+}
+
+.footer p{
+    padding-top:20px;
+    font-size: 14px;
+}
+
+@media (min-width: 700px) {
+    .heading h1{
+        font-size: 36px;
+    }
+
+    .heading .form-container{
+        width: auto;
+    }
+
+    .heading .form-container input, .heading .form-container button{
+        width: auto;
+        padding: 12px 20px;
+    }
+
+    .heading .form-container button{
+        width: 150px;
+    }
+
+    .showcase img{
+        width: 600px;
+    }
+}
+
